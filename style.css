@@ -1,0 +1,22 @@
+div.rottentomatoes {
+    margin-bottom: 5px;
+}
+
+div.rottentomatoes_left {
+    float: left;
+    margin-right: 5px;
+}
+
+div.rottentomatoes_right {
+    float: right;
+    margin-left: 5px;
+}
+
+div.rottentomatoes_center {
+    text-align: center;
+}
+
+div.rottentomatoes_center * {
+    text-align: left;
+}
+
