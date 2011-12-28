@@ -1,0 +1,7 @@
+base   rottentomatoes
+author Andreas Gohr
+email  andi@splitbrain.org
+date   2011-12-27
+name   rottentomatoes plugin
+desc   Display movie info from rotten tomatoes.com
+url    http://www.dokuwiki.org/plugin:rottentomatoes
