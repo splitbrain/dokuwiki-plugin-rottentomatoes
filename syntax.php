@@ -35,7 +35,7 @@ class syntax_plugin_rottentomatoes extends DokuWiki_Syntax_Plugin {
         $this->Lexer->addSpecialPattern('\{\{rt>[^\}]+\}\}',$mode,'plugin_rottentomatoes');
     }
 
-    public function handle($match, $state, $pos, &$handler){
+    public function handle($match, $state, $pos, Doku_Handler $handler){
         $data = array();
 
         // parse syntax
@@ -87,7 +87,7 @@ class syntax_plugin_rottentomatoes extends DokuWiki_Syntax_Plugin {
         return $data;
     }
 
-    public function render($mode, &$R, $data) {
+    public function render($mode, Doku_Renderer $R, $data) {
         if($mode != 'xhtml') return false;
 
         $json = $this->apicall($data['base'],$data['params']);
